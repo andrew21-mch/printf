@@ -3,39 +3,6 @@
 #include "holberton.h"
 
 /***The _printf is thesame as printf which incuds in <stdio.h>***/
-int output_convert(unsigned int num, const int base){
-    const char *digit = "0123456789ABCDEF";
-    unsigned int buf[32];
-    int i = 0;
-    char ch;
-    if(base == 10){
-        do
-        {
-            buf[i]=num%10;
-            num=num/16;
-            i++;
-        } while (num>0);
-        
-    }
-    if (base == 16){
-        do { 
-            buf[i] = num % 16; num = num / 16; i++; 
-            }
-        while ( num > 0 ); 
-    }
-    if (base == 4){
-        do { 
-            buf[i] = num % 4; num = num / 4; i++; 
-            }
-        while ( num > 0 ); 
-        }
-
-
-    while ( --i >= 0 ) { 
-        ch = digit[buf[i]]; putchar( ch ); 
-        } 
-}
-
 
 int _printf(const char *format, ...){
     va_list unnamed_p;
@@ -68,4 +35,5 @@ int _printf(const char *format, ...){
     return 0; 
 
 }
+
 
