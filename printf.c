@@ -69,19 +69,3 @@ int _printf(const char *format, ...){
 
 }
 
-int myprinftest(void){
-    char buf[16] = "abcd";
-    int counter = 0;
-    _printf("hello, test printf\n");
-    _printf("test str: %s\n",buf);
-    for (; counter<5; counter++){
-        _printf("test int: %d\n",counter);
-    }
-}
-int main(){
-    int a = 1;
-    int b = a*19;
-    _printf("%d\n", b);
-
-    myprinftest();
-}
