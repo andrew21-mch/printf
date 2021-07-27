@@ -35,6 +35,7 @@ sudo ./install
 Compile your code with `gcc -Wall -Werror -Wextra -pedantic *.c`
 ```
 
+### see example below
 ```c
 #include <stdio.h>
 #include "holberton.h"
@@ -43,7 +44,7 @@ int main(void)
 {
     int i = 10;
     int print;
-    char *s = "printf by Teddy & Mark";
+    char *s = "printf still under test by Andrew";
     _printf("%d %s %c\n", i, s, 'c');
      print =  _printf("%d", s); /* get number of characters */
      printf("%d\n", print); /* print number of characters */
