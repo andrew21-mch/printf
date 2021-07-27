@@ -57,7 +57,7 @@ int main(void)
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 # Copyright
-Copyright (c) 2021 Teddy Kisala & Mark Tanui
+Copyright (c) 2021 Nfon Andrew
 
 
 
